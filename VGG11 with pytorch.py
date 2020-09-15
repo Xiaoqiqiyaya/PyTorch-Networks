@@ -52,7 +52,7 @@ class VGG(nn.Module):
 
 if __name__ =='__main__':
   device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-  epoch_num = 1
+  epoch_num = 40
   learning_rate = 0.001
   train_transform = transforms.Compose([
       transforms.Resize((32,32)),
